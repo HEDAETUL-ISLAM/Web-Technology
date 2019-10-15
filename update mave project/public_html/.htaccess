@@ -1,0 +1,15 @@
+
+RewriteOptions inherit
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^admin$ "http\:\/\/173\.82\.212\.25\:8000\/admin\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^api$ "http\:\/\/173\.82\.212\.25\:8000\/dashboard\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^maveinfo$ "http\:\/\/173\.82\.212\.25\:8000\/maveinfo\/" [R=301,L]
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^maveteam\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.maveteam\.com$
+RewriteRule ^/?$ "https\:\/\/maveteam\.com\/" [R=301,L]

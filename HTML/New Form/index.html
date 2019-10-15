@@ -1,0 +1,177 @@
+<html>
+    <head>
+        <title>Donation Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main-block" >
+            <form action="">
+                <fieldset>
+                    <legend >
+                        <h2 class="header">Donor Information</h2>
+                    </legend>
+                    <div class="donor-information">
+                        <div >
+                            <div><label>First Name*</label><input type="text" name="fame" required></div>
+                            <div><label>Last Name*</label><input type="text" name="lame" required></div>
+                            <div><label>Company</label><input type="text" name="company" ></div>
+                            <div><label>Address 1*</label><input type="text" name="address1" required></div>
+                            <div><label>Address 2</label><input type="text" name="address2" required></div>
+                            <div><label>City*</label><input type="text" name="city" required></div>
+                            <div>
+                                <label>State*</label>
+                                <select class="state" name="state" required>
+                                    <option value=""></option>
+                                    <option value="Bangladesh">Dhaka</option>
+                                    <option value="India">Khulna</option>
+                                    <option value="Nepal">Rangpur</option>
+                                    <option value="Vutan">Barishal</option>
+                                    <option value="Srilonka">Syleth</option>
+                                    <option value="Maldip">Chittagong</option>
+                                    <option value="Afgan">Jerrore</option>
+                                </select>
+                            </div>
+                            <div><label>Zip Code*</label><input type="text" name="zipcode" required></div>
+                            <div>
+                                <label>Country*</label>
+                                <select class="country" name="country" required>
+                                    <option value=""></option>
+                                    <option value="Bangladesh">Bangladesh</option>
+                                    <option value="India">India</option>
+                                    <option value="Nepal">Nepal</option>
+                                    <option value="Vutan">Vutan</option>
+                                    <option value="Srilonka">Srilonka</option>
+                                    <option value="Maldip">Maldip</option>
+                                    <option value="Afgan">Afgan</option>
+                                </select>
+                            </div>
+                            <div><label>Phone</label><input type="text" name="phone" ></div>
+                            <div><label>Fax</label><input type="text" name="fax" ></div>
+                            <div><label>Email*</label><input type="text" name="email" required></div>
+                            <div>
+                                <label>Donation Amount* <br/><label class="custom-label">(Check a button or type your amount) </label></label>
+                                <div class="damount" rewuired>
+                                    <input type="radio" value="none" id="none" name="damount" required  />
+                                    <label for="male" >None</label>
+                                    <input type="radio" value="none" id="$50" name="damount"  required />
+                                    <label for="female" >$50</label>
+                                    <input type="radio" value="none" id="$75" name="damount" required  />
+                                    <label for="other" >$75</label>
+                                    <input type="radio" value="none" id="$100" name="damount" required  />
+                                    <label for="female" >$100</label>
+                                    <input type="radio" value="none" id="$250" name="damount"  required />
+                                    <label for="other" >$250</label>
+                                    <input type="radio" value="none" id="Other" name="damount"  required />
+                                    <label for="other" >Other</label>
+                                </div>
+                            </div>
+                            <div><label>Other Amount $</label><input type="text" name="otherAmount"></div>
+                            <div>
+                                <label>Recurring Donation <br/><label class="custom-label">(Check if available)</label></label>
+                                <div class="recu-donation">
+                                    <input type="checkbox" name="rdonation"   >
+                                    <label>I am interested in giving on a regular basis.</label><br>
+                                </div>
+                            </div>
+                            <div class="custom-div">
+                                <label >Monthly Credit Card $ </label>
+                                <input style="width: 200px;" type="text" name="amount" >
+                                <label style="width: 20px;">For</label>
+                                <input style="width: 50px;" type="text" name="months" >
+                                <label style="width: 50px;">Months</label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend >
+                        <h2 class="header">Honorarium Memorial Donation Information</h2>
+                    </legend>
+                    <div class="honor-information">
+                        <div >
+                            <div>
+                                <label>I would like to make this donation</label>
+                                <div class="donationto">
+                                    <input type="radio" value="none" id="honor" name="donationTo"   />
+                                    <label for="male" >To Honor</label>
+                                    <input type="radio" value="none" id="memory" name="donationTo"   />
+                                    <label for="female" >In Memory of</label>
+                                </div>
+                            </div>
+                            <div><label>Name</label><input type="text" name="honorName" ></div>
+                            <div><label>Acknowledge Donation to</label><input type="text" name="donationAckTo" ></div>
+                            <div><label>Address</label><input type="text" name="donationAddress" ></div>
+                            <div><label>City</label><input type="text" name="donationCity" ></div>
+                            <div>
+                                <label>State</label>
+                                <select class="state" name="donationState">
+                                    <option value=""></option>
+                                    <option value="Bangladesh">Dhaka</option>
+                                    <option value="India">Khulna</option>
+                                    <option value="Nepal">Rangpur</option>
+                                    <option value="Vutan">Barishal</option>
+                                    <option value="Srilonka">Syleth</option>
+                                    <option value="Maldip">Chittagong</option>
+                                    <option value="Afgan">Jerrore</option>
+                                </select>
+                            </div>
+                            <div><label>Zip</label><input type="text" name="donationZipcode" ></div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend >
+                        <h2 class="header">Additional Information</h2>
+                    </legend>
+                    
+                    <div class="additional-information">
+                        <div >
+                            <p>Please enter your name , company or organization as you would like to appear in our publications</p>
+                            <div><label>Name</label><input type="text" name="companyName" ></div>
+                        </div>
+                    </div>
+                    <div >
+                        <div class="checkbox">
+                            <input type="checkbox" name="additionalInfo1"><span>I am interested in giving on a regular basis.</span>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="additionalInfo2"><span>My employer offers a matching gift program. I will mail the eatching gift form.</span>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="additionalInfo3"><span>Please save the cost of acknowledge this gift by not mailing a thank you letter.</span>
+                        </div>
+                    </div>
+                    <div class="additional-information">
+                        <div >
+                            <div>
+                                <label style="margin-top: -80px;">Comments <br/><label class="custom-label">(Please type any ques or feedback here) </label></label>
+                                <textarea class="textarea" name="comments" placeholder="Leave a comment..." ></textarea>
+                            </div>
+                            <div>
+                                <label style="margin-top: -50px;">How may we contact you ? </label>
+                                <div class="recu-donation">
+                                    <input type="checkbox" name="email"   >
+                                    <label>E-mail.</label><br>
+                                    <input type="checkbox" name="pmail"   >
+                                    <label>Postal Mail.</label><br>
+                                    <input type="checkbox" name="tlphone"   >
+                                    <label>Telephone.</label><br>
+                                    <input type="checkbox" name="fax"   >
+                                    <label>Fax.</label><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div >
+                        <div class="checkbox">
+                            <input type="checkbox" name="permission"><span>I would like information about volunteering with me.</span>
+                        </div>
+                    </div>
+                </fieldset>
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <p>If you have any problem <a href="https://hedaetul-islam.github.io">contact</a> with us</p>
+    </body>
+</html>
