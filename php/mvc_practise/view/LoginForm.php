@@ -1,7 +1,7 @@
 <?php
+session_start();
 require_once "../model/Login.php";
 require_once "../controller/PersonController.php";
-global $info;
 $id = "";
 $passwords = "";
 
@@ -9,12 +9,12 @@ if (isset($_POST['login'])) {
     $id = $_POST['id'];
     $passwords = $_POST['passwords'];
     $login = new Login($id, $passwords);
-    $personController = new PersonController();
-    if ($personController->loginPerson($login) === 1) {
-        $info = $id;
-        include_once "./success.php";
+    $userId = loginPerson($login);
+    if ($userId > 0) {
+        $_SESSION['userId'] = $userId;
+        include_once "./errors/success.php";
     } else {
-        include_once "./wrong.php";
+        include_once "./errors/wrong.php";
     }
 }
 ?>
@@ -25,7 +25,7 @@ if (isset($_POST['login'])) {
         <button class="open-button" onclick="openForm()">Login</button>
 
         <div class="form-popup" id="myForm">
-            <form action="index.php" method="POST" class="form-container">
+            <form action="about.php" method="POST" class="form-container">
                 <h1>Login</h1>
 
                 <label for="id"><b>Id</b></label>
